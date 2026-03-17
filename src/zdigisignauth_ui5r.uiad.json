@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "digi sign auth",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Digital Signature Auth. Matrix"
+  },
+  "ui5AppDetails": {
+    "appId": "zdigisignauth"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BFF6BE340979EEDF0F9039DB3946D94CDD16F2CD_TM",
+    "semanticObject": "zdigisignauth",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BFF6BE340979EEDF0F9039DB3946D94CDD16F2CD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Digital Signature Auth. Matrix"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+managed implementation in class zbp_i_pdf_details unique;
+strict ( 2 );
+
+define behavior for ZI_PDF_DETAILS //alias <alias_name>
+persistent table zdb_pdf_details
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly : update ) Billingdocument;
+
+  mapping for zdb_pdf_details
+    {
+      Billingdocument = billingdocument;
+      Billingdate     = billingdate;
+      Uuid            = uuid;
+      Status          = status;
+      Sourcefile      = sourcefile;
+      SourceFileName  = sourcefilename;
+      Signedfile      = signedfile;
+      SignedFileName  = signedfilename;
+      Cancelled       = cancelled;
+      Signedon        = signedon;
+      Signedat        = signedat;
+      Createdby       = createdby;
+      Createdon       = createdon;
+      Lastchangedby   = lastchangedby;
+      Lastchangedon   = lastchangedon;
+    }
+
+
+}

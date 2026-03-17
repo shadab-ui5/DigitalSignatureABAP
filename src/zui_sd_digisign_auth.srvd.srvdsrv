@@ -1,0 +1,4 @@
+@EndUserText.label: 'Digi Sign Auth'
+define service Zui_sd_digisign_auth {
+  expose ZI_SD_DigiSign_Auth as DigiSignAuth;
+}

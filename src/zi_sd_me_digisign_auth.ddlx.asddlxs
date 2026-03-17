@@ -1,0 +1,79 @@
+@Metadata.layer: #CORE
+
+@UI:{
+headerInfo:{
+typeName: 'Digi-Sign Matrix',
+typeNamePlural: 'Digi-Sign Matrix',
+title:{ value: 'Userid'  }
+}
+}
+
+annotate entity ZI_SD_DigiSign_Auth with
+{
+
+  @UI.facet: [
+  {
+  id: 'Details',
+  purpose: #STANDARD,
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'Digi-Sign Matrix',
+  position: 10
+  } ]
+
+
+  @UI:{
+  lineItem: [{ position: 10,
+               label: 'CB UserID' }],
+
+  identification: [{ position: 10,
+                     label: 'CB UserID' }],
+
+  selectionField: [{ position: 10 }]
+  }
+
+  Userid;
+
+  @UI:{
+  lineItem: [{ position: 20,
+               label: 'Plant Code' }],
+
+  identification: [{ position: 20,
+                     label: 'Plant Code' }],
+
+  selectionField: [{ position: 20 }]
+  }
+
+  Plant;
+
+  @UI:{
+  lineItem: [{ position: 30,
+               label: 'Plant Name' }],
+
+  identification: [{ position: 30,
+                     label: 'Plant Name' }]
+  }
+
+  Plantname;
+
+  @UI:{
+  lineItem: [{ position: 40,
+               label: 'Signatory Name' }],
+
+  identification: [{ position: 40,
+                     label: 'Signatory Name' }]
+  }
+
+  SignatoryName;
+
+  @UI:{
+  lineItem: [{ position: 50,
+               label: 'Enable Re-signature' }],
+
+  identification: [{ position: 50,
+                     label: 'Enable Re-signature' }]
+  }
+
+  EnableResign;
+
+
+}

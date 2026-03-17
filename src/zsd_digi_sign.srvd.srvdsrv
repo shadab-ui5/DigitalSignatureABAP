@@ -1,0 +1,6 @@
+@EndUserText.label: 'Digital Signature Service'
+define service ZSD_DIGI_SIGN {
+  expose ZI_PDF_DETAILS;
+  expose ZC_PDF_DETAILS     as DigitalSignatureDetails;
+  expose ZI_DS_Form_Details as DigiSignInfo;
+}
